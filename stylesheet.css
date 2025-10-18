@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #78aee4;
+}
+
+html {
+    scroll-padding-top: 50px;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    color: #0f172a;
+}
+
+h2 {
+    color: #0f172a;
+}
+
+p {
+    color: #1e293b;
+}
+
+a {
+    text-decoration: none;
+    color: #2563eb;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    height: 30px;
+    width: 120px;
+    border-color: white;
+    border-radius: 10px;
+}
+
+button:hover {
+    color: black;
+}
+
+.header {
+    position: fixed;
+    background-color: #f1f5f9;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header img {
+    height: 50px;
+    width: 180px;
+}
+
+.header-options {
+    display: flex;
+    gap: 40px;
+    margin-left: 10rem;
+}
+
+.header-options a {
+    text-decoration: none;
+}
+
+.header-options a:hover {
+    text-decoration: underline;
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+}
+
+#scrollTopBtn.show {
+    display: block;
+}
+
+#scrollTopBtn:hover {
+    box-shadow: 3px  3px 20px #1e40af;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.home-img img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-right: 60px;
+    padding-left: 60px;
+    padding-top: 30px;
+}
+
+.home-img {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+#typing {
+    color: #1e40af;
+    border-right: 2px solid #1e40af;
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.home-contant p {
+    font-size: 17px;
+    max-width: 700px;
+    box-sizing: border-box;
+    padding-right: 130px;
+    line-height: 25px;
+}
+
+.home-contant-btns {
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home-contant-btns a {
+    font-size: larger;
+    color: inherit;
+    padding: 2px;
+    border: 2px solid #2563eb;
+    border-radius: 50%;
+    color: #2563eb;
+}
+
+.home-contant-btns a:hover {
+    box-shadow: 3px  3px 20px #1e40af;
+}
+
+.about {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.about-profile img {
+    height: 240px;
+    width: 220px;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+.about-profile {
+    background-color: rgb(189, 221, 221);
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.img-discription p {
+    font-size: 20px;
+}
+
+.profile-btns {
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.aboutme {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 90px;
+    max-width: 700px;
+    box-sizing: border-box;
+    padding-right: 130px;
+} 
+
+.aboutme p {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.skills {
+    width: 100%;
+}
+
+.skills h1 {
+    text-align: center;
+}
+
+.various-skills {
+    display: flex;
+}
+
+.tech-skills {
+    width: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.tech-skills h2 {
+    text-align: center;
+}
+
+.card-container {
+    background-color: rgb(255, 255, 255, 0.35);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 7px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 10px #406284;
+}
+
+.card i {
+    font-size: 60px;
+}
+
+.card img {
+    height: 60px;
+    width: 90px;
+}
+
+.other-skills {
+    width: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.tools h2 {
+    text-align: center;
+}
+
+.soft-skills h2 {
+    text-align: center;
+}
+
+ul {
+    column-count: 2;
+    column-gap: 60px;
+    list-style: none;
+    background-color: rgb(255, 255, 255, 0.35);
+    border-radius: 7px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+ul li {
+    line-height: 35px;
+}
+
+.education {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.education h1 {
+    text-align: center;
+}
+
+#atcenter {
+    text-align: center;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.ed-card-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.ed-card {
+    display: flex;
+    background-color: rgb(255, 255, 255, 0.35);
+    margin-bottom: 50px;
+    border-radius: 7px;
+    padding-right: 250px;
+}
+
+.ed-card:hover {
+    box-shadow: 3px 3px 15px #406284;
+}
+
+.ed-card-img img {
+    height: 160px;
+    width: 230px;
+    padding-right: 40px;
+}
+
+.ed-card-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 35px;
+}
+
+.ed-card-description p {
+    font-size: 17px;
+}
+
+.contact {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.contact-me {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 20px;
+    max-width: 700px;
+    box-sizing: border-box;
+}
+
+.contact-me h2 {
+    text-align: center;
+}
+
+.contact-me p {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 90px;
+    max-width: 700px;
+    box-sizing: border-box;
+    padding-right: 30px;
+}
+.details input {
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f1f5f9;
+    color: darkgrey;
+}
+
+.portfolio p {
+    font-size: 17px;
+}
+
+.quick-links a {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.contact-info p {
+    font-size: 17px;
+    line-height: 25px;
+}
